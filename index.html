@@ -18,7 +18,7 @@
 			function heart(){
 				var start_y = $(window).height() - 50;
 				var win_width = $(window).width();	
-				var start_x = randomInteger(0,win_width); 
+				var start_x = randomInteger(20,win_width-20); 
 				var hrt = $('<div class="heart"></div>');
 				hrt.html('<img src="img/heart.png" width="50">'); 
 				hrt.css({top:start_y,left:start_x})
