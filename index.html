@@ -9,16 +9,40 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script type="text/javascript">
 		$(function(){
+			var i = 0;
 			function randomInteger(min, max) {
 				var rand = min - 0.5 + Math.random() * (max - min + 1)
 				rand = Math.round(rand);
 				return rand;
 			}
 
+				function change(){
+				var  tabs = [
+					'<p class="tab" style="color:#ffffff";">Спасибо тебе за то что появилась в моей жизни</p>', 
+					'<p class="tab" style="color:#FF00FF";">Я постоянно думаю только о тебе</p>',
+					'<p class="tab" style="color:#FFD700";">Любимая моя, ты подарила мне счастье</p>',
+					'<p class="tab" style="color:#00FA9A";">Ты самая няшная демонесса в мире </p>',
+					'<p class="tab" style="color:#FF69B4;">Я хочу чтобы мы всегда всегда были вместе</p>',
+					'<p class="tab" style="color:#FF0000;">Я всегда буду беречь тебя и заботиться о тебе</p>',
+				];
+				if(i >= tabs.length) 
+					i = 0; 
+
+				$(".tab").hide(1500);
+				$(".tab").remove(); 
+				var div = $('<div></div>').html(tabs[i]);
+				div.css({display:"none"});
+  				$('h1').after(div);
+  				div.fadeIn(1500);
+				i++;
+
+			}
+
+
 			function heart(){
-				var start_y = $(window).height() - 50;
+				var start_y = $(window).height() - 150;
 				var win_width = $(window).width();	
-				var start_x = randomInteger(0,win_width); 
+				var start_x = randomInteger(20,win_width-20); 
 				var hrt = $('<div class="heart"></div>');
 				hrt.html('<img src="img/heart.png" width="50">'); 
 				hrt.css({top:start_y,left:start_x})
@@ -27,12 +51,17 @@
 					$(this).remove();
 				});
 			}
+			
+
+		
 
 			$(".declaration").fadeIn(4000);
 			$(".title").fadeIn(2000);
-			setInterval(heart,700);
+			setInterval(heart,700); 
+			setInterval(change,4000);
 
 		});
+		
 	</script>
 </head>
 <body>
@@ -42,12 +71,13 @@
 	<div class="declaration">
 		<div class="love">
 		<h1>Я люблю тебя</h1>
-		<p>Спасибо тебе за то что ты появилась в моей жизни</p>
-		<p id="author"> Твой Кот Дурак</p>
+	
+		
 		</div>
 		<div class="my-image">
 			<img src="img/image1.jpg" id="my-img">
 		</div>
+		<p id="author"> Твой Кот Дурак</p>
 	</div>
 	<audio autoplay loop>
 		<source src="mp3.mp3" type="audio/mpeg">
