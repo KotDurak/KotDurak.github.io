@@ -1,86 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Alex I love you</title>
-	<script src="js/jquery.js"></script>
-	<script src="js/main.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script type="text/javascript">
-		$(function(){
-			var i = 0;
-			function randomInteger(min, max) {
-				var rand = min - 0.5 + Math.random() * (max - min + 1)
-				rand = Math.round(rand);
-				return rand;
-			}
-
-				function change(){
-				var  tabs = [
-					'<p class="tab" style="color:#ffffff";">Спасибо тебе за то что появилась в моей жизни</p>', 
-					'<p class="tab" style="color:#FF00FF";">Я постоянно думаю только о тебе</p>',
-					'<p class="tab" style="color:#FFD700";">Любимая моя, ты подарила мне счастье</p>',
-					'<p class="tab" style="color:#00FA9A";">Ты самая няшная демонесса в мире </p>',
-					'<p class="tab" style="color:#FF69B4;">Я хочу чтобы мы всегда всегда были вместе</p>',
-					'<p class="tab" style="color:#FF0000;">Я всегда буду беречь тебя и заботиться о тебе</p>',
-				];
-				if(i >= tabs.length) 
-					i = 0; 
-
-				$(".tab").hide(1500);
-				$(".tab").remove(); 
-				var div = $('<div></div>').html(tabs[i]);
-				div.css({display:"none"});
-  				$('h1').after(div);
-  				div.fadeIn(1500);
-				i++;
-
-			}
-
-
-			function heart(){
-				var start_y = $(window).height() - 150;
-				var win_width = $(window).width();	
-				var start_x = randomInteger(20,win_width-20); 
-				var hrt = $('<div class="heart"></div>');
-				hrt.html('<img src="img/heart.png" width="50">'); 
-				hrt.css({top:start_y,left:start_x})
-				$('body').append(hrt);
-				hrt.animate({top:0,opacity:0},4000,function(){
-					$(this).remove();
-				});
-			}
-			
-
-		
-
-			$(".declaration").fadeIn(4000);
-			$(".title").fadeIn(2000);
-			setInterval(heart,700); 
-			setInterval(change,4000);
-
-		});
-		
-	</script>
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 </head>
 <body>
-	<div class="title">
-		Александра 
-	</div>
-	<div class="declaration">
-		<div class="love">
-		<h1>Я люблю тебя</h1>
-	
-		
-		</div>
-		<div class="my-image">
-			<img src="img/image1.jpg" id="my-img">
-		</div>
-		<p id="author"> Твой Кот Дурак</p>
-	</div>
-	<audio autoplay loop>
-		<source src="mp3.mp3" type="audio/mpeg">
-	</audio>
-</body>
+	<header class="main-head">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<div class="logo">
+						<img src="images/logo.png" id="logo">
+					</div>
+				</div>
+				<div class="col-md-10">
+					<ul class="nav nav-justified my-menu">
+						<li class="active"><a href="#">Услуги</a></li>
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Зачем вам это?</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+
+			</div>
+		</header>
+		<section class="main">
+			<div class="container">
+				<div class="products">
+					<div class="row">
+						<div class="col-md-4">
+							<a href="#"><img src="images/product.jpg" class="product-img"></a>
+						</div>
+						<div class="col-md-4">
+							<a href="#"><img src="images/product.jpg" class="product-img"></a>
+						</div>
+						<div class="col-md-4">
+							<a href="#"><img src="images/product.jpg" class="product-img"></a>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-md-4">
+							<a href="#"><img src="images/product.jpg" class="product-img"></a>
+						</div>
+						<div class="col-md-4">
+							<a href="#"><img src="images/product.jpg" class="product-img"></a>
+						</div>
+						<div class="col-md-4">
+							<a href="#"><img src="images/product.jpg" class="product-img"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="statistic">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<p class="lead">
+							59 000 руб / мксяцц терял наш клиент из за плохой репутации в интернете
+						</p>
+					</div>
+					<div class="col-md-4">
+						<p class="lead">
+							59 000 руб / мксяцц терял наш клиент из за плохой репутации в интернете
+						</p>
+					</div>
+					<div class="col-md-4">
+						<p class="lead">
+							59 000 руб / мксяцц терял наш клиент из за плохой репутации в интернете
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="about">
+			<div class="container">
+				<div class="about-block">
+					<h3 class="text-center">О нас</h3>
+					<p class="lead">Мы занимаемся продвижением сайтов Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+				</div>
+			</section>
+			<section class="facts">
+				<div class="container">
+					<h3 class="text-center">Факты</h3>
+					<div class="row">
+						<div class="col-md-3">
+							<div class="number-item">
+								<div class="number-icon">
+									<img src="images/about-icon1.png" alt="">
+								</div>
+								<div class="number-item-txt">						 
+									<p class="lead">Более <span class="accent-txt">450 клиентов</span> доверили нам свое финансовое будущее</p>
+								</div>											
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="number-item">
+								<div class="number-icon">
+									<img src="images/about-icon1.png" alt="">
+								</div>
+								<div class="number-item-txt">						 
+									<p class="lead">Более <span class="accent-txt">450 клиентов</span> доверили нам свое финансовое будущее</p>
+								</div>											
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="number-item">
+								<div class="number-icon">
+									<img src="images/about-icon1.png" alt="">
+								</div>
+								<div class="number-item-txt">						 
+									<p class="lead">Более <span class="accent-txt">450 клиентов</span> доверили нам свое финансовое будущее</p>
+								</div>											
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="number-item">
+								<div class="number-icon">
+									<img src="images/about-icon1.png" alt="">
+								</div>
+								<div class="number-item-txt">						 
+									<p class="lead">Более <span class="accent-txt">450 клиентов</span> доверили нам свое финансовое будущее</p>
+								</div>											
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="why">
+				<div class="container">
+					<div class="about-block">
+						<h3 class="text-center">Зачем вам это</h3>
+						<p class="lead">Мы занимаемся продвижением сайтов Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+					</div>
+			</section>
+			<footer>
+				<div class="container">
+					<h3 class="text-center">Контакты</h3>
+					<div class="row">
+						<div class="col-md-4 contact">
+							<i class="glyphicon glyphicon-earphone"></i>
+							<span>Телефон:</span><br/>
+							<span><a class="" href="tel:+74951281396">+7 (495) 128-13-96</a></span>
+						</div>
+						<div class="col-md-4 contact">
+							<i class="glyphicon glyphicon-envelope"></i>
+							<span>Email:</span><br/>
+							<span><a class="" href="mailto:info@anderidagroup.com">info@anderidagroup.com</a></span>
+						</div>
+						<div class="col-md-4 contact">
+							<i class="glyphicon glyphicon-home"></i>
+							<span>Наш адрес:</span><br/>
+							<span>123317, г. Москва, Пресненская набережная 12, башня “Федерация-Восток”, 27 этаж</span>
+						</div>
+					</div>
+				</div>
+				<div class="copyright">
+					<div class="container">
+						Copyright <script>document.write(new Date().getFullYear());</script> All right reserved
+					</div>
+				</div>
+			</footer>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/popper.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	</body>
 </html>
