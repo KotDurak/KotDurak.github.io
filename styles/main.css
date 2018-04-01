@@ -13,9 +13,14 @@
 	margin-bottom: 10px;
 }
 
+header{
+	padding: 50px 0;
+}
+
 section{
 	padding: 50px 0;
 }
+
 
 .menu-item{
 	color:#ffffff;
@@ -32,11 +37,14 @@ section{
 	background: red;
 }
 
+
+
 .my-menu a{
 	color: #ffffff;
 	text-transform: uppercase;
 	font-weight: 500;
 	font-size: 20px; 
+	background: #121b2a;
 }
 
 .my-menu a:hover{
@@ -46,10 +54,45 @@ section{
 	transition: all .3s cubic-bezier(0.68, 0.3, 0.04, 1.73);
 }
 
+
 .main{
 	background: #eeeeee;
 	padding-bottom: 50px; 
 }
+
+.item{
+	position: relative;
+}
+
+.item h2{
+	position: absolute;
+	left: 0; 
+	top:0;
+}
+
+.big-item span{
+	font-size: 30px; 
+}
+
+.small-item span{
+	font-size: 18px;
+}
+
+.xs-item span{
+	font-size: 18px;
+	line-height: 0 !important;
+}
+
+.item span{
+	color:#ffffff;
+	line-height: 55px;
+	background: rgba(0, 0, 0, 0.7);
+}
+
+.item a:hover{
+	text-decoration: none;
+}
+
 
 .products{
 	margin: 0 auto;
@@ -58,6 +101,11 @@ section{
 }
 .products .product-img{
 	width: 100%;
+}
+
+.img-right{
+	width: 100%; 
+	height: 450px; 
 }
 
 .products .col-md-4{
@@ -74,6 +122,7 @@ section h3{
 	text-transform: uppercase;
 }
 
+
 .about{
 	padding-top: 50px; 
 	background: #eeeeee;
@@ -82,6 +131,80 @@ section h3{
 .about-block{
 	
 }
+
+
+/* Диаграмма */ 
+.progress-pie-chart {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #E5E5E5;
+  position: relative;
+}
+.progress-pie-chart.gt-50 {
+  background-color: #81CE97;
+}
+
+
+.ppc-progress {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 100px);
+  top: calc(50% - 100px);
+  width: 200px;
+  height: 200px;
+  clip: rect(0, 200px, 200px, 100px);
+}
+.ppc-progress .ppc-progress-fill {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 100px);
+  top: calc(50% - 100px);
+  width: 200px;
+  height: 200px;
+  clip: rect(0, 100px, 200px, 0);
+  background: #81CE97;
+  transform: rotate(60deg);
+}
+.gt-50 .ppc-progress {
+  clip: rect(0, 100px, 200px, 0);
+}
+.gt-50 .ppc-progress .ppc-progress-fill {
+  clip: rect(0, 200px, 200px, 100px);
+  background: #E5E5E5;
+}
+
+.ppc-percents {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 173.9130434783px/2);
+  top: calc(50% - 173.9130434783px/2);
+  width: 173.9130434783px;
+  height: 173.9130434783px;
+  background: #fff;
+  text-align: center;
+  display: table;
+}
+.ppc-percents span {
+  display: block;
+  font-size: 2.6em;
+  font-weight: bold;
+  color: #81CE97;
+}
+
+.pcc-percents-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+.progress-pie-chart {
+  margin: 50px auto 0;
+}
+
 
 
 .facts{
@@ -97,7 +220,11 @@ section h3{
 
 .number-item:hover{
 	background: rgba(0,0,0,0.1);
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
 }
+
 
 .number-icon{
 	min-height: 80px;
@@ -147,4 +274,9 @@ footer{
     padding: 18px 0;
     color: #d4d4d4;
     font-size: 16px; 
+}
+
+.btn-request{
+	width: 100%; 
+	margin-bottom: 50px !important;
 }
