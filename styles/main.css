@@ -3,18 +3,21 @@
 	background: #121b2a;
 }
 
+header{
+	padding-top: 30px;
+}
+
 #logo{
 	width: 100px;
 }
 
 .logo{
 	text-align: center;
-	margin-top: 10px;
 	margin-bottom: 10px;
 }
 
-header{
-	padding: 50px 0;
+.head-row{
+	padding-bottom:10px;
 }
 
 section{
@@ -22,9 +25,69 @@ section{
 }
 
 
+
+.header-text{
+	margin-top: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.facebook a{
+	color:#ffffff !important;
+	text-decoration: none !important;
+	font-size: 16px; 
+	font-weight: 700;
+}
+.facebook a:hover{
+	color:#e4ad50 !important;
+	text-decoration: none;
+	transition: 1s;
+}
+
+.facebook span{
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.mail{
+	font-size:16px;
+	display: block;
+	margin-top: 10px;
+}
+
+.mail a{
+	font-size:16px;
+	color:#ffffff !important;
+	text-decoration: none !important;
+	font-weight: 700;
+}
+
+.mail a:hover{
+	color:#e4ad50 !important;
+	text-decoration: none !important;
+	transition: 1s;
+}
+
+.main-menu{
+	border-top:1px solid #4a5569;
+}
+
+.contact-list-wrap{
+	display: list-item;
+	list-style-type: none;
+}
+
+.contact-list-wrap li{
+	list-style-type: none;
+}
+
+.contact-list-wrap{
+	
+}
+
 .menu-item{
 	color:#ffffff;
-	text-transform: uppercase;
+
 	font-weight: 500;
 	text-decoration: none;
 	display: block; 
@@ -40,11 +103,15 @@ section{
 
 
 .my-menu a{
-	color: #ffffff;
-	text-transform: uppercase;
+	color: #ffffff !important;
 	font-weight: 500;
 	font-size: 20px; 
-	background: #121b2a;
+	background: #121b2a !important;
+	border-left: 1px solid #4a5569;
+}
+
+.my-menu:last-child a{
+	border-right: 1px solid #4a5569;
 }
 
 .my-menu a:hover{
@@ -122,6 +189,9 @@ section h3{
 	text-transform: uppercase;
 }
 
+.description{
+	line-height: 2 !important;
+}
 
 .about{
 	padding-top: 50px; 
