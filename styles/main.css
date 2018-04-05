@@ -28,7 +28,7 @@ section{
 
 .header-text{
 	margin-top: 20px;
-    font-size: 24px;
+    font-size: 34px;
     text-align: center;
 }
 
@@ -124,11 +124,17 @@ section{
 
 .main{
 	background: #eeeeee;
-	padding-bottom: 50px; 
+	padding-bottom: 100px; 
 }
 
 .item{
 	position: relative;
+	background: #1b1616;
+}
+
+.item img:hover{
+	opacity: 0.5;
+	transition: 1s;
 }
 
 .item h2{
@@ -139,6 +145,15 @@ section{
 
 .big-item span{
 	font-size: 30px; 
+
+}
+
+#recognition{
+	height: 162px;
+}
+
+#represent{
+
 }
 
 .small-item span{
@@ -184,6 +199,12 @@ section{
 
 }
 
+.row-statistic p{
+	line-height: 1.5;
+	margin-top:30px;
+	font-size:24px;
+}
+
 section h3{
 	font-size: 36px; 
 	text-transform: uppercase;
@@ -198,8 +219,8 @@ section h3{
 	background: #eeeeee;
 }
 
-.about-block{
-	
+.about-block p{
+	font-size:24px;
 }
 
 
@@ -295,6 +316,9 @@ section h3{
 	transform: scale(1.2);
 }
 
+.number-item p{
+	font-size: 24px;
+}
 
 .number-icon{
 	min-height: 80px;
@@ -315,6 +339,7 @@ span.accent-txt {
 
 .why{
 	background: #eeeeee;
+	padding-bottom: 100px;
 }
 
 
@@ -349,4 +374,8 @@ footer{
 .btn-request{
 	width: 100%; 
 	margin-bottom: 50px !important;
+}
+
+.blog-header h1{
+	text-transform: uppercase;
 }
