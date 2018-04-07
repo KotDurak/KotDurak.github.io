@@ -1,3 +1,18 @@
+@font-face{
+	font-family: Roboto-Bold; 
+	src:url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face{
+	font-family: Roboto-Regular; 
+	src:url(../fonts/Roboto-Regular.ttf);
+}
+
+
+body{
+	font-family: Roboto-Regular; 
+}
+
 .main-head{
 	color:#ffffff;
 	background: #121b2a;
@@ -39,10 +54,15 @@ section{
 	font-weight: 700;
 }
 .facebook a:hover{
-	color:#e4ad50 !important;
+	color:#ffffff !important;
 	text-decoration: none;
 	transition: 1s;
 }
+
+.facebook img{
+	display: inline-block;
+}
+
 
 .facebook span{
 	font-weight: 500;
@@ -72,17 +92,32 @@ section{
 	border-top:1px solid #4a5569;
 }
 
+.main-menu a{
+	font-family: Roboto-Bold;
+}
+
 .contact-list-wrap{
 	display: list-item;
 	list-style-type: none;
+	text-align: right;
 }
 
 .contact-list-wrap li{
 	list-style-type: none;
 }
 
-.contact-list-wrap{
-	
+
+
+.fb-circle{
+	display: inline-block;
+	padding: 10px 15px; 
+	background: #7794ee;
+	text-align: center;
+	border-radius: 50%;
+}
+
+.fb-circle:hover{
+	background: #e4ad50;
 }
 
 .menu-item{
@@ -141,6 +176,9 @@ section{
 	position: absolute;
 	left: 0; 
 	top:0;
+	font-weight: 700; 
+	text-align: center;
+	width: 100%;
 }
 
 .big-item span{
@@ -148,16 +186,20 @@ section{
 
 }
 
+.big-item img{
+	opacity: 0.8;
+}
+
 #recognition{
-	height: 162px;
+	height: 417px;
 }
 
 #represent{
-
+	height: 458px;
 }
 
 .small-item span{
-	font-size: 18px;
+	/*font-size: 18px;*/
 }
 
 .xs-item span{
@@ -168,7 +210,7 @@ section{
 .item span{
 	color:#ffffff;
 	line-height: 55px;
-	background: rgba(0, 0, 0, 0.7);
+	/*background: rgba(0, 0, 0, 0.7);*/
 }
 
 .item a:hover{
@@ -179,6 +221,7 @@ section{
 .products{
 	margin: 0 auto;
 	margin-top: 50px;
+	font-family: Roboto-Bold;
 	
 }
 .products .product-img{
@@ -187,7 +230,12 @@ section{
 
 .img-right{
 	width: 100%; 
-	height: 450px; 
+	height: 458px; 
+}
+
+
+.bottom-products{
+	margin-top: 10px;
 }
 
 .products .col-md-4{
