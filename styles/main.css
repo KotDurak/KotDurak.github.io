@@ -165,6 +165,7 @@ section{
 .item{
 	position: relative;
 	background: #1b1616;
+	cursor: pointer;
 }
 
 .item img:hover{
@@ -172,18 +173,49 @@ section{
 	transition: 1s;
 }
 
-.item h2{
+.item .product-header{
 	position: absolute;
-	left: 0; 
-	top:40%;
+	left: 10%; 
+	top:20%;
 	font-weight: 700; 
-	text-align: center;
-	width: 100%;
+	text-align: left;
 }
 
 .big-item span{
 	font-size: 30px; 
 
+}
+
+.item span{
+	line-height: 1.2 !important;
+	font-size:20px;
+}
+
+.ghost-btn{
+	display: block;
+	text-align: center;
+	border: 2px solid #ffffff;
+	width: 170px; 
+	padding: 10px;
+	color: #ffffff !important;
+	text-decoration: none !important;
+	display: none;
+	margin-top:10px
+}
+
+.ghost-small{
+	width: 130px;
+}
+
+.ghost-btn img{
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.ghost-btn:hover{
+	background-color: #e4e4e4;
+	color: #000000 !important;
+	text-decoration: none !important;
 }
 
 .big-item img{
@@ -442,13 +474,37 @@ footer{
 	background: url(../images/product.jpg) no-repeat center top / cover;
 }
 
-#bad-rate-bg:before{
+#representation-bg{
+	height: 500px; 
+	background: url(../images/business_representation2.jpg) no-repeat center top / cover;
+}
+
+#marketing-bg{
+	height: 500px;
+	background: url(../images/bg-marketing.jpg) no-repeat center top / cover;
+}
+
+#negative-bg{
+	height: 500px; 
+	background: url(../images/negative.jpg) no-repeat center top / cover;
+}
+
+#recognition-bg{
+	height: 500px; 
+	background: url(../images/brand_recognition.jpg) no-repeat center top / cover;
+}
+
+#bad-rate-bg:before, #representation-bg:before, 
+#marketing-bg:before, #negative-bg:before, 
+#recognition-bg:before{
 	content: "";
 	position:absolute;
 	width: 100%;
 	height: 500px;
 	background: rgba(0,0,0,0.5);
 }
+
+
 
 .bg-container .row{
 	color:#ffffff;

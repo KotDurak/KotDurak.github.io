@@ -55,41 +55,58 @@
 				<div class="row">
 					<div class="col-md-5">
 						<div class="item big-item">
-							<a href="bad_rate.html"><img src="images/product.jpg" class="img-responsive"></a>
-							<h2><a href="bad_rate.html"><span>Нейтрализуем плохие отзывы</span></a></h2>
+							<img src="images/product.jpg" class="img-responsive">
+							<div class="product-header">
+								<span>Нейтрализуем плохие отзывы</span>
+								<a href="bad_rate.html" class="service-btn button ghost-btn">Узнать подробнее <img src="images/details-btn.png" alt=""></a>
+							</div>
+							
+
 						</div>
 					</div>
 					<div class="col-md-5">
 						<div class="item">
-							<a href="representation.html"><img  id="represent" src="images/business_representation2.jpg" class="img-responsive"></a>
-							<h2><a href="representation.html"><span>Интернет-представительство вашего бизнеса</span></a></h2>
+							<img  id="represent" src="images/business_representation2.jpg" class="img-responsive">
+							<div class="product-header">
+								<span>Интернет-представительство вашего бизнеса</span>
+								<a href="representation.html" class="service-btn button ghost-btn">Узнать подробнее <img src="images/details-btn.png" alt=""></a>
+							</div>
 						</div>
 					</div>
 					<div   class="col-md-2">
 						<div class="item xs-item">
-							<a href="marketing_design.html"><img src="images/product3.jpg" class="img-right"></a>
-							<h2><a href="marketing_design.html"><span>Маркетинг-оформление</span></a></h2>
-						</div>		
+							<img src="images/product3.jpg" class="img-right">
+							<div class="product-header">
+								<span>Маркетинг-оформление</span>
+								<a href="marketing_design.html" class="service-btn button ghost-small ghost-btn">Подробнее<img src="images/details-btn.png" alt=""></a>
+							</div>		
+						</div>
 					</div>
 				</div>
 				<div class="row bottom-products">
 					<div class="col-md-6">
 						<div class="item small-item">
-							<a href="negative_work.html"><img src="images/negative.jpg" class="img-responsive"></a>
-							<h2><a href="negative_work.html"><span>Работа с негативом</span></a></h2>
+							<img src="images/negative.jpg" class="img-responsive">
+							<div class="product-header">
+								<span>Работа с негативом</span>
+								<a href="negative_work.html" class="service-btn button  ghost-btn">Узнать подробнее<img src="images/details-btn.png" alt=""></a>
+							</div>
 						</div>
 					</div>
 					<div class="col-md-6">
 						<div class="item small-item">
-							<a href="recognition.html"><img id="recognition" src="images/brand_recognition.jpg" class="img-responsive"></a>
-							<h2><a href="recognition.html"><span>Узнаваемость бренда</span></a></h2>
+						<img id="recognition" src="images/brand_recognition.jpg" class="img-responsive">
+							<div class="product-header">
+								<span>Узнаваемость бренда</span>
+								<a href="recognition.html" class="service-btn button  ghost-btn">Узнать подробнее<img src="images/details-btn.png" alt=""></a>
+							</div>
 						</div>
 					</div>
 				</div>			
 			</div>
 
 		</div>
-	</div>
+
 </section>
 <section class="statistic">
 	<div class="container">
@@ -255,17 +272,20 @@
 <script type="text/javascript" src="js/jquery.viewportchecker.js"></script>
 <script type="text/javascript">
 	$(function(){
-		
 
-		$(window).scroll(function(){
-
+		$('.item').mouseover(function(){
+			$(this).find('.ghost-btn').css('display', 'block');
 		});
 
-		 $('.row-statistic').viewportChecker({
-		 	 callbackFunction: function(elem, action){
-		 	 	$('.circlestat').circliful();
-		 	 }
-		 });
+		$('.item').mouseout(function(){
+			$(this).find('.ghost-btn').css('display', 'none');
+		});
+
+		$('.row-statistic').viewportChecker({
+			callbackFunction: function(elem, action){
+				$('.circlestat').circliful();
+			}
+		});
 
 
 			//$("#start").modal('show');
