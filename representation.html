@@ -76,13 +76,20 @@
 	</div>
 	<div class="container">
 
-		<div class="blog-header">
-			<h1 class="blog-title">Интернет-представительство вашего бизнеса</h1>
-		</div>
-
 		<div class="row">
-
-			<div class="col-sm-12 blog-main">	
+			<div class="col-md-3">
+				<div class="list-group">
+					<span class="list-head">
+						<h3 class="list-header text-center">Услуги</h3>
+					</span>
+					<a href="bad_rate.html" class="list-group-item">Нейтрализуем плохие отзывы</a>
+					<a href="representation.html" class="list-group-item">Интернет-представительство вашего бизнеса</a>
+					<a href="marketing_design.html" class="list-group-item">Маркетинг-оформление</a>
+					<a href="negative_work.html" class="list-group-item">Работа с негативом</a>
+					<a href="recognition.html" class="list-group-item">Узнаваемость бренда</a>
+				</div>
+			</div>
+			<div class="col-md-9 blog-main">	
 				<p class="lead">
 					Компания R+ предлагает услуги по профессиональному ведению профиля вашей компании на любой площадке (социальные сети, форумы, блог компании и многое другое).
 				</p>
@@ -111,55 +118,56 @@
 				<p class="lead">
 					Оставьте заявку и мы свяжемся с вами, вышлем наше коммерческое предложение, и ответим на все ваши вопросы
 				</p>
-			</div>
-
-
-		</div>
-		<button  id="request" type="button" class="btn btn-success btn-request">Оставить заявку</button>
-	</div>
-
-	<div id="request-form" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-		<div class="modal-dialog modal-lg" role="document">
-			<div class="modal-content">
 				<div class="row">
-					<div class="col-md-12">
-						<div class="col-sm-9 form-box wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
-							<div class="form-top">
-								<div class="form-top-left">
-									<h3>Сделать заявку</h3>
-									<p>Заполните ваши личные данные</p>
+					<div class="col-md-12 my-form">
+						<div class="col-md-4 form-header">
+							Посоветоваться с экспертом		
+						</div>
+						<div class="form-bottom col-md-8">
+							<form role="form" action="" method="post">
+								<div class="row form-row">
+									<div class="col-md-12 col-sm-12 input-text">
+										<span class="input-wrapper">
+											<input id="name" type="text" name="name" placeholder="Введите имя" 
+											required="true">
+										</span>
+									</div>
 								</div>
-								<div class="form-top-right">
-									<span aria-hidden="true" class="typcn typcn-pencil"></span>
+								<div class="row form-row">
+									<div class="col-md-12 col-sm-12 input-text">
+										<span class="input-wrapper">
+											<input id="phone" type="tel" name="phone" placeholder="Введите номер" 
+											onkeypress="validate(event)" required="true">
+										</span>
+									</div>
 								</div>
-							</div>
-							<div class="form-bottom">
-								<form role="form" action="" method="post">
-									<div class="form-group">
-										<label class="sr-only" for="form-first-name">Имя</label>
-										<input type="text" name="form-first-name" placeholder="Имя..." class="form-first-name form-control" id="form-first-name">
+								<div class="row form-row">
+									<div class="col-md-12 col-sm-12 input-text">
+										<span class="input-wrapper">
+											<input id="email" type="email" name="email" 
+											placeholder="Введите адрес электронной почты" 
+											required="true">
+										</span>
 									</div>
-									<div class="form-group">
-										<label class="sr-only" for="form-last-name">Фамилия</label>
-										<input type="text" name="form-last-name" placeholder="Фамилия..." class="form-last-name form-control" id="form-last-name">
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<button class="form-button">Записаться</button>
 									</div>
-									<div class="form-group">
-										<label class="sr-only" for="form-email">Email</label>
-										<input type="text" name="form-email" placeholder="Email..." class="form-email form-control" id="form-email">
+								</div>
+								<div class="row">
+									<div class="col-md-12 agree">
+										<input type="checkbox" name="agree" required="true">
+										<a href="#">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных</a>
 									</div>
-									<div class="form-group">
-										<label class="sr-only" for="form-about-yourself">О себе</label>
-										<textarea name="form-about-yourself" placeholder="О себе..." class="form-about-yourself form-control" id="form-about-yourself"></textarea>
-									</div>
-									<button type="submit" class="btn">Отправить</button>
-
-								</form>
-							</div>
+								</div>
+							</form>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		
 	</div>
 
 	<footer>
@@ -195,11 +203,16 @@
 	<script type="text/javascript" src="js/popper.min.js"></script>
 	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript">
-		$(function(){
-			$('#request').click(function(){
-				$('#request-form').modal('show');
-			});
-		})
+		function validate(event){
+				var theEvent = event || window.event;
+				var key = theEvent.keyCode || theEvent.which;
+				key = String.fromCharCode( key );
+				var regex = /[0-9]/;
+				if( !regex.test(key) ) {
+					theEvent.returnValue = false;
+					if(theEvent.preventDefault) theEvent.preventDefault();
+				}
+			}
 	</script>
 </body>
 </html>
