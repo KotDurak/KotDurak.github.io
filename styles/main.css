@@ -9,8 +9,20 @@
 }
 
 
+@font-face{
+	font-family: 'Palatino';
+	src:url(../fonts/palab.ttf);
+}
+
+@font-face{
+	font-family: 'PalatinoBold'; 
+	src:url(../fonts/palab.ttf);
+}
+
+
+
 body{
-	font-family: Roboto-Regular; 
+	font-family: 'PalatinoBold' !important;  
 }
 
 .main-head{
@@ -93,7 +105,7 @@ section{
 }
 
 .main-menu a{
-	font-family: Roboto-Bold;
+	font-weight: 700;
 }
 
 .contact-list-wrap{
@@ -234,15 +246,22 @@ section{
 	/*font-size: 18px;*/
 }
 
-.xs-item span{
-	font-size: 18px;
-	line-height: 0 !important;
-}
-
 .item span{
 	color:#ffffff;
 	line-height: 55px;
+	font-size: 40px;
 	/*background: rgba(0, 0, 0, 0.7);*/
+}
+
+.xs-item span{
+	font-size: 21px;
+	line-height: 0 !important;
+}
+
+
+
+.item a{
+	font-family: Roboto-Bold;
 }
 
 .item a:hover{
@@ -253,9 +272,11 @@ section{
 .products{
 	margin: 0 auto;
 	margin-top: 50px;
-	font-family: Roboto-Bold;
+/*	font-family: Roboto-Bold; */
 	
 }
+
+
 .products .product-img{
 	width: 100%;
 }
@@ -643,7 +664,8 @@ footer{
 
 .agree a{
 	display: inline-block !important;
-	width: auto !important;
+	/*width: auto !important; */
+	width: 95%; 
 	font-size: 14px !important;
 	line-height: 16px !important;
 	margin-left: 10px !important;
@@ -690,3 +712,15 @@ footer{
 	}
 }
 
+
+@media screen and (max-width: 1200px){
+	.xs-item span{
+		font-size: 15px; 
+	}
+}
+
+@media screen and (max-width: 986px){
+	.xs-item span{
+		font-size: 40px;
+	}
+}
