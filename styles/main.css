@@ -19,7 +19,7 @@
 	src:url(../fonts/palab.ttf);
 }
 
-
+ 
 
 body{
 	font-family: 'PalatinoBold' !important;  
@@ -723,4 +723,13 @@ footer{
 	.xs-item span{
 		font-size: 40px;
 	}
+}
+
+
+.circle-container{
+	margin-bottom: 0 !important;
+}
+
+.circle-text{
+	font-family: Roboto-Regular;
 }
