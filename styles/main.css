@@ -54,7 +54,7 @@ section{
 
 
 .header-text{
-	margin-top: 20px;
+	margin-top: 70px;
 	font-size: 34px;
 	text-align: center;
 }
@@ -112,6 +112,7 @@ section{
 	display: list-item;
 	list-style-type: none;
 	text-align: right;
+	margin-top: 40px;
 }
 
 .contact-list-wrap li{
