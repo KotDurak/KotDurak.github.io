@@ -100,6 +100,10 @@ section{
 	transition: 1s;
 }
 
+.li-request{
+	margin-top:10px;
+}
+
 .main-menu{
 	border-top:1px solid #4a5569;
 }
@@ -481,8 +485,8 @@ footer{
 }
 
 .btn-request{
-	width: 100%; 
-	margin-bottom: 50px !important;
+	padding: 10px !important; 
+	font-size:18px !important;
 }
 
 .blog-header h1{
