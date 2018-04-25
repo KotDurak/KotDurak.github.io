@@ -742,3 +742,8 @@ footer{
 .modal-black{
 	background: #090d15;
 }
+
+#start .modal-dialog{
+	width: 100%; 
+	height: 100vh;
+}
