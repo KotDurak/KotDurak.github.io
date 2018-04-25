@@ -266,13 +266,13 @@
 			</div>
 		</div>
 	</footer>
-
+b
 	<div id="start" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
 		<div class="modal-dialog modal-lg" role="document">
 			<div class="modal-content">
 				<div class="row">
-					<div class="col-md-12">
-						<img src="images/big-logo.png" class="img-responsive">
+					<div class="col-md-12 modal-black">
+						<img src="images/logo.png" class="img-responsive">
 					</div>
 				</div>
 			</div>
@@ -340,6 +340,7 @@
 	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/jquery.circliful.min.js"></script>
 	<script type="text/javascript" src="js/jquery.viewportchecker.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
 	<script type="text/javascript">
 		function validate(event){
 			var theEvent = event || window.event;
@@ -352,6 +353,10 @@
 			}
 		}
 		$(function(){
+
+			
+
+		
 
 			$('.item').mouseover(function(){
 				$(this).find('.ghost-btn').css('display', 'block');
@@ -372,7 +377,15 @@
 
 			});
 
-			//$("#start").modal('show');
+			if($.cookie('modal') != 'opened')
+				$("#start").modal('show');
+
+			$.cookie('modal', 'opened'); 
+
+
+			$(".modal-black").click(function(e){
+				$("#start").modal('hide');
+			});
 			var $ppc = $('.progress-pie-chart');
 			for(var i = 0; i < $ppc.length; i++){
 				percent = parseInt($($ppc[i]).data('percent'));

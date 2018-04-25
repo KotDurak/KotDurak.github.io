@@ -738,3 +738,7 @@ footer{
 .circle-text{
 	font-family: Roboto-Regular;
 }
+
+.modal-black{
+	background: #090d15;
+}
