@@ -741,9 +741,24 @@ footer{
 
 .modal-black{
 	background: #090d15;
+	height: 100vh; 
 }
 
 #start .modal-dialog{
 	width: 100%; 
 	height: 100vh;
+}
+
+.pointer{
+	 color: yellow;
+	font-size: 180px;
+	position:  absolute;
+	z-index: 30;
+	left: 40%;
+	position: absolute;
+}
+
+.modal-img{
+	display: inline-block !important;
+	max-width: 70% !important; 
 }

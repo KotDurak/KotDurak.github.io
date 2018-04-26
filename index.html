@@ -122,7 +122,7 @@
 					<div class="circle-container">
 						<div class="circlestat" data-dimension="200" data-text="92%" data-width="5" data-fontsize="38" data-percent="92" data-fgcolor="#61a9dc" data-bgcolor="#eee" data-fill="#fff"></div>
 					</div>
-					<p class="lead text-center">
+					<p class="lead">
 						потребителей                  
 						читают отзывы 
 						в интернете 
@@ -134,7 +134,7 @@
 					<div class="circle-container">
 						<div class="circlestat" data-dimension="200" data-text="86%" data-width="5" data-fontsize="38" data-percent="86" data-fgcolor="#61a9dc" data-bgcolor="#eee" data-fill="#fff"></div>
 					</div>
-					<p class="lead text-center">
+					<p class="lead">
 						прочитавших негативный отзыв колеблются с решением о покупке такого товара или услуги* 
 					</p>
 				</div>
@@ -142,7 +142,7 @@
 					<div class="circle-container">
 						<div class="circlestat" data-dimension="200" data-text="74%" data-width="5" data-fontsize="38" data-percent="74" data-fgcolor="#61a9dc" data-bgcolor="#eee" data-fill="#fff"></div>
 					</div>
-					<p class="lead text-center">
+					<p class="lead">
 						бизнеса в России сталкивается с клеветой в интернете
 					</p>
 				</div>
@@ -150,7 +150,7 @@
 					<div class="circle-container">
 						<div class="circlestat" data-dimension="200" data-text="100%" data-width="5" data-fontsize="38" data-percent="100" data-fgcolor="#61a9dc" data-bgcolor="#eee" data-fill="#fff"></div>
 					</div>
-					<p class="lead text-center">
+					<p class="lead">
 						таких ситуаций можно разрешить при правильном подходе
 
 					</p>
@@ -227,7 +227,7 @@
 		<div class="container">
 			<div class="about-block">
 				<h3 class="text-center">Зачем вам это</h3>
-				<p class="lead description">Вы еще не поняли? Приведем простой пример: Ваша фирма А продает прекрасные стулья – они крепкие, красиво выглядят и стоят в пределах средних значений рынка. Есть вы, а есть Иван Петровичи его компания В – глядя на вас он решил тоже продавать точно такие же стулья и открыл офис напротив вас, сразу же после открытия он занялся формированием образа своей компании в интернете: обратился в репутационную компанию которая быстро сформировала ему положительный рейтинг на Flamp, стала прекрасно работать с негативом в социальных сетях. Как следствие, ваши продажи упали, ведь как мы знаем – 94% покупателей почитали отзывы в интернете о вас, и о вашем конкуренте Иване Петровиче. Но это не все! Иван Петрович глядя на то, что прямо напротив его офиса располагается такая же компания решил испортить им репутацию и стал каждый день писать негативный отзыв о том, какие «ужасные» стулья вы продаете.
+				<p class="lead description">Вы еще не поняли? Приведем простой пример: Ваша фирма А продает прекрасные стулья – они крепкие, красиво выглядят и стоят в пределах средних значений рынка. Есть вы, а есть Иван Петрович и его компания В – глядя на вас он решил тоже продавать точно такие же стулья и открыл офис напротив вас, сразу же после открытия он занялся формированием образа своей компании в интернете: обратился в репутационную компанию которая быстро сформировала ему положительный рейтинг на Flamp, стала прекрасно работать с негативом в социальных сетях. Как следствие, ваши продажи упали, ведь как мы знаем – 94% покупателей почитали отзывы в интернете о вас, и о вашем конкуренте Иване Петровиче. Но это не все! Иван Петрович глядя на то, что прямо напротив его офиса располагается такая же компания решил испортить им репутацию и стал каждый день писать негативный отзыв о том, какие «ужасные» стулья вы продаете.
 
 					Именно поэтому вам уже сегодня нужно задуматься о своей репутации в интернете, потому что ваша репутация – это ваш фундамент, фундамент вашего бизнеса и его будущее. 
 				</p>
@@ -271,8 +271,9 @@ b
 		<div class="modal-dialog modal-lg" role="document">
 			<div class="modal-content">
 				<div class="row">
-					<div class="col-md-12 modal-black">
-						<img src="images/logo.png" class="img-responsive">
+					<div class="col-md-12 modal-black text-center">
+						<img src="images/logo-modal.png" class="img-responsive modal-img">
+					<!--	<i class="fa fa-angle-double-down pointer"></i> -->
 					</div>
 				</div>
 			</div>
@@ -355,7 +356,9 @@ b
 		$(function(){
 
 			
-
+			$('#start').scroll(function(e){
+				$("#start").modal('hide');
+			});
 		
 
 			$('.item').mouseover(function(){
