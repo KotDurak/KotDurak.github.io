@@ -31,7 +31,9 @@
 					<div class="contact-list-wrap">
 						<ul>
 							<li class="facebook">
-								<a c class="fb-circle" href="https://www.facebook.com/reputationplusrus/?ref=bookmarks"><i class="fa fa-facebook"></i></a>
+								<a c class="" href="https://www.facebook.com/reputationplusrus/?ref=bookmarks">
+									<i class="fa fa-facebook"></i>
+								</a>
 							</li>
 							<li class="mail"><i class="fa fa-envelope"></i> Email:<br><a href="mailto:info@anderidagroup.com">info@anderidagroup.com</a></li>
 							<li class="li-request">
@@ -270,16 +272,15 @@ b
 	<div id="start" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
 		<div class="modal-dialog modal-lg" role="document">
 			<div class="modal-content">
-				<div class="row">
-					<div class="col-md-12 modal-black text-center">
-						<img src="images/logo-modal.png" class="img-responsive modal-img">
-					<!--	<i class="fa fa-angle-double-down pointer"></i> -->
+				<div class="row img-bg-row">
+					<div class="col-md-12 modal-black text-center" style="opacity: 0">
+						<img src="images/logo-modal-2.png" class="img-responsive modal-img">
+						<h3 class="text-center modal-hdr">Строим вашу репутацию</h3>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
 
 	<div id="request-form" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
 		<div class="modal-dialog modal-lg" role="document">
@@ -380,8 +381,9 @@ b
 
 			});
 
-			if($.cookie('modal') != 'opened')
+		//	if($.cookie('modal') != 'opened')
 				$("#start").modal('show');
+			$(".modal-black").animate({opacity:1},5000);
 
 			$.cookie('modal', 'opened'); 
 
