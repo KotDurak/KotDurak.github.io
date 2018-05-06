@@ -11,7 +11,7 @@
 
 @font-face{
 	font-family: 'Palatino';
-	src:url(../fonts/palab.ttf);
+	src:url(../fonts/pala.ttf);
 }
 
 @font-face{
@@ -63,8 +63,9 @@ section{
 
 .header-text{
 	margin-top: 70px;
-	font-size: 34px;
+	font-size: 44px;
 	text-align: center;
+	font-family: 'Palatino' !important;
 }
 
 .facebook a{
