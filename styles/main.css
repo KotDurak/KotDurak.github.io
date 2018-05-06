@@ -789,7 +789,7 @@ footer{
 /*	border:1px solid red; */
 	position: fixed;
 	width: 100vw;
-	bottom: 7%;
+	bottom: 7vh;
 }
 
 .text-reputaion-modal{
@@ -801,4 +801,14 @@ footer{
 .modal-hdr{
 	color: #ffffff;
 	text-transform: uppercase;
+}
+
+@media screen and (max-width: 300px){
+	.down-wrapper{
+		bottom: 10vh;	
+	}
+
+@media screen and (max-width: 300px){
+	.down-wrapper{
+		bottom: 15vh;	
 }
