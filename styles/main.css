@@ -774,24 +774,28 @@ footer{
 .modal-img{
 	display: inline-block !important;
 	/*max-width: 70% !important; */
-	max-height: 95vh !important;
+	max-height: 70vh !important;
 }
 
 .img-bg-row{
 	background: #090d15;
 }
 
-.down{
- 	position: fixed;
-	bottom:50px;
-	left: 50%;
-	display: block; 
-
+.down-img{
+	max-width: 5vw;
 }
 
-.img-down{
-	display: inline-block !important;
-	width: 100px;
+.down-wrapper{
+/*	border:1px solid red; */
+	position: fixed;
+	width: 100vw;
+	bottom: 7%;
+}
+
+.text-reputaion-modal{
+	font-size: 2em;
+    color: #fefefe;
+    font-weight: 100 !important;
 }
 
 .modal-hdr{
