@@ -31,11 +31,11 @@
 					<div class="contact-list-wrap">
 						<ul>
 							<li class="facebook">
-								<a c class="" href="https://www.facebook.com/reputationplusrus/?ref=bookmarks">
+								<a target="_blank" class="" href="https://www.facebook.com/reputationplusrus/?ref=bookmarks">
 									<i class="fa fa-facebook"></i>
 								</a>
 							</li>
-							<li class="mail"><i class="fa fa-envelope"></i> Email:<br><a href="mailto:info@anderidagroup.com">info@anderidagroup.com</a></li>
+							<li class="mail"><i class="fa fa-envelope"></i> Email:<br><a href="mailto:info@reputation-plus.ru">info@reputation-plus.ru</a></li>
 							<li class="li-request">
 								<button  id="request" type="button" class="btn btn-warning btn-request request">Оставить заявку</button>
 							</li>
@@ -246,19 +246,17 @@
 			<h3 class="text-center">Контакты</h3>
 			<div class="row">
 				<div class="col-md-4 contact">
-					<i class="glyphicon glyphicon-earphone"></i>
-					<span>Телефон:</span><br/>
-					<span><a class="" href="tel:+74951281396">+7 (495) 128-13-96</a></span>
-				</div>
-				<div class="col-md-4 contact">
 					<i class="glyphicon glyphicon-envelope"></i>
 					<span>Email:</span><br/>
-					<span><a class="" href="mailto:info@anderidagroup.com">info@anderidagroup.com</a></span>
+					<span><a class="" href="mailto:info@reputation-plus.ru">info@reputation-plus.ru</a></span>
 				</div>
 				<div class="col-md-4 contact">
-					<i class="glyphicon glyphicon-home"></i>
-					<span>Наш адрес:</span><br/>
-					<span>123317, г. Москва, Пресненская набережная 12, башня “Федерация-Восток”, 27 этаж</span>
+					
+				</div>
+				<div class="col-md-4 contact">
+					<a target="_blank" id="fb-link" class="" href="https://www.facebook.com/reputationplusrus/?ref=bookmarks">
+						facebook
+					</a>
 				</div>
 			</div>
 		</div>
@@ -268,7 +266,6 @@
 			</div>
 		</div>
 	</footer>
-b
 	<div id="start" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
 		<div class="modal-dialog modal-lg" role="document">
 			<div class="modal-content">
@@ -297,7 +294,7 @@ b
 							Посоветоваться с экспертом		
 						</div>
 						<div class="form-bottom col-md-8">
-							<form role="form" action="" method="post">
+					<form role="form" action="" method="post">
 								<div class="row form-row">
 									<div class="col-md-12 col-sm-12 input-text">
 										<span class="input-wrapper">
@@ -326,12 +323,6 @@ b
 								<div class="row">
 									<div class="col-md-12">
 										<button class="form-button">Записаться</button>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12 agree">
-										<input type="checkbox" name="agree" required="true">
-										<a href="#">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных</a>
 									</div>
 								</div>
 							</form>
@@ -366,7 +357,7 @@ b
 			$('#start').scroll(function(e){
 				$("#start").modal('hide');
 			});
-		
+
 
 			$('.item').mouseover(function(){
 				$(this).find('.ghost-btn').css('display', 'block');
@@ -388,26 +379,26 @@ b
 			});
 
 		//	if($.cookie('modal') != 'opened')
-				$("#start").modal('show');
-			$(".modal-black").animate({opacity:1},5000);
+		$("#start").modal('show');
+		$(".modal-black").animate({opacity:1},5000);
 
-			$.cookie('modal', 'opened'); 
+		$.cookie('modal', 'opened'); 
 
 
-			$(".modal-black").click(function(e){
+		$(".modal-black").click(function(e){
 				//$("#start").modal('hide');
 			});
-			var $ppc = $('.progress-pie-chart');
-			for(var i = 0; i < $ppc.length; i++){
-				percent = parseInt($($ppc[i]).data('percent'));
-				deg = 360*percent/100;
-				if (percent > 50) {
-					$($ppc[i]).addClass('gt-50');
-				}	
-				$($ppc[i]).find('.ppc-progress-fill').css('transform','rotate('+ deg +'deg)');
-				$($ppc[i]).find('.ppc-percents span').html(percent+'%');
-			}
-		});
-	</script>
+		var $ppc = $('.progress-pie-chart');
+		for(var i = 0; i < $ppc.length; i++){
+			percent = parseInt($($ppc[i]).data('percent'));
+			deg = 360*percent/100;
+			if (percent > 50) {
+				$($ppc[i]).addClass('gt-50');
+			}	
+			$($ppc[i]).find('.ppc-progress-fill').css('transform','rotate('+ deg +'deg)');
+			$($ppc[i]).find('.ppc-percents span').html(percent+'%');
+		}
+	});
+</script>
 </body>
 </html>

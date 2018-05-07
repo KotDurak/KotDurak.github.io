@@ -1,5 +1,5 @@
 @font-face{
-	font-family: Roboto-Bold; 
+	font-family: 'Roboto-Bold'; 
 	src:url(../fonts/Roboto-Bold.ttf);
 }
 
@@ -803,6 +803,18 @@ footer{
 	color: #ffffff;
 	text-transform: uppercase;
 }
+#fb-link {
+	font-size: 38px !important;
+	font-family: 'Roboto-Bold'; 
+	color: #fdfdfd;
+	text-decoration: none !important; 
+}
+
+#fb-link:hover{
+	text-decoration: none !important; 
+	color: #b9b7b7;
+}
+
 
 @media screen and (max-width: 300px){
 	.down-wrapper{
@@ -811,5 +823,9 @@ footer{
 
 @media screen and (max-width: 300px){
 	.down-wrapper{
-		bottom: 15vh;	
+	bottom: 15vh;	
+	}
 }
+
+
+

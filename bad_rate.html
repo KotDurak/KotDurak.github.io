@@ -12,25 +12,30 @@
 <header class="main-head">
 		<div class="container">
 			<div class="row head-row">
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-12">
 					<div class="logo">
 						<a href="index.html">
 							<img src="images/logo.png" alt="" class="img-responsive">
 						</a>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-6 col-sm-12">
 					<div class="header-text">
 						Reputation+ - строим репутацию
 					</div>	
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-12">
 					<div class="contact-list-wrap">
 						<ul>
 							<li class="facebook">
-								<a c class="fb-circle" href="#"><i class="fa fa-facebook"></i></a>
+								<a target="_blank" class="" href="https://www.facebook.com/reputationplusrus/?ref=bookmarks">
+									<i class="fa fa-facebook"></i>
+								</a>
 							</li>
-							<li class="mail"><i class="fa fa-envelope"></i> Email:<br><a href="mailto:info@anderidagroup.com">info@anderidagroup.com</a></li>
+							<li class="mail"><i class="fa fa-envelope"></i> Email:<br><a href="mailto:info@reputation-plus.ru">info@reputation-plus.ru</a></li>
+							<li class="li-request">
+								<button  id="request" type="button" class="btn btn-warning btn-request request">Оставить заявку</button>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -40,10 +45,10 @@
 			<div class="container">
 				<div class="row">
 					<ul class="nav nav-justified my-menu">
-						<li class="active nav-item"><a class="nav-link" href="index.html#services">Услуги</a></li>
-						<li><a href="index.html#about">О нас</a></li>
-						<li><a href="index.html#why">Зачем вам это?</a></li>
-						<li><a href="index.html#contacts">Контакты</a></li>
+						<li class="active nav-item"><a class="nav-link" href="#services">Услуги</a></li>
+						<li><a href="#about">О нас</a></li>
+						<li><a href="#why">Зачем вам это?</a></li>
+						<li><a href="#contacts">Контакты</a></li>
 					</ul>
 				</div>
 			</div>
@@ -168,32 +173,78 @@
 		</div>
 
 		<footer>
+		<div class="container">
+			<h3 class="text-center">Контакты</h3>
+			<div class="row">
+				<div class="col-md-4 contact">
+					<i class="glyphicon glyphicon-envelope"></i>
+					<span>Email:</span><br/>
+					<span><a class="" href="mailto:info@reputation-plus.ru">info@reputation-plus.ru</a></span>
+				</div>
+				<div class="col-md-4 contact">
+					
+				</div>
+				<div class="col-md-4 contact">
+					<a target="_blank" id="fb-link" class="" href="https://www.facebook.com/reputationplusrus/?ref=bookmarks">
+						facebook
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
 			<div class="container">
-				<h3 class="text-center">Контакты</h3>
+				Copyright <script>document.write(new Date().getFullYear());</script> All right reserved
+			</div>
+		</div>
+	</footer>
+
+<div id="request-form" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-conten">
 				<div class="row">
-					<div class="col-md-4 contact">
-						<i class="glyphicon glyphicon-earphone"></i>
-						<span>Телефон:</span><br/>
-						<span><a class="" href="tel:+74951281396">+7 (495) 128-13-96</a></span>
-					</div>
-					<div class="col-md-4 contact">
-						<i class="glyphicon glyphicon-envelope"></i>
-						<span>Email:</span><br/>
-						<span><a class="" href="mailto:info@anderidagroup.com">info@anderidagroup.com</a></span>
-					</div>
-					<div class="col-md-4 contact">
-						<i class="glyphicon glyphicon-home"></i>
-						<span>Наш адрес:</span><br/>
-						<span>123317, г. Москва, Пресненская набережная 12, башня “Федерация-Восток”, 27 этаж</span>
+					<div class="col-md-12 my-form">
+						<div class="col-md-4 form-header">
+							Посоветоваться с экспертом		
+						</div>
+						<div class="form-bottom col-md-8">
+					<form role="form" action="" method="post">
+								<div class="row form-row">
+									<div class="col-md-12 col-sm-12 input-text">
+										<span class="input-wrapper">
+											<input id="name" type="text" name="name" placeholder="Введите имя" 
+											required="true">
+										</span>
+									</div>
+								</div>
+								<div class="row form-row">
+									<div class="col-md-12 col-sm-12 input-text">
+										<span class="input-wrapper">
+											<input id="phone" type="tel" name="phone" placeholder="Введите номер" 
+											onkeypress="validate(event)" required="true">
+										</span>
+									</div>
+								</div>
+								<div class="row form-row">
+									<div class="col-md-12 col-sm-12 input-text">
+										<span class="input-wrapper">
+											<input id="email" type="email" name="email" 
+											placeholder="Введите адрес электронной почты" 
+											required="true">
+										</span>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<button class="form-button">Записаться</button>
+									</div>
+								</div>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="copyright">
-				<div class="container">
-					Copyright <script>document.write(new Date().getFullYear());</script> All right reserved
-				</div>
-			</div>
-		</footer>
+		</div>
+	</div>
 
 
 		<script type="text/javascript" src="js/jquery.js"></script>
@@ -212,7 +263,10 @@
 			}
 
 			$(function(){
+				$('.request').click(function(){
+					$('#request-form').modal('show');
 
+				});	
 			});
 
 		</script>
