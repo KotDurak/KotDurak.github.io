@@ -378,11 +378,11 @@
 
 			});
 
-		//	if($.cookie('modal') != 'opened')
-		$("#start").modal('show');
+		if($.cookie('modal') != 'opened')
+			$("#start").modal('show');
 		$(".modal-black").animate({opacity:1},5000);
 
-		$.cookie('modal', 'opened'); 
+		$.cookie('modal', 'opened', {path: '/'}); 
 
 
 		$(".modal-black").click(function(e){
