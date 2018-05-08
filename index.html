@@ -377,14 +377,15 @@
 				$('#request-form').modal('show');
 
 			});
-
-		if($.cookie('modal') != 'opened')
+		
+		if($.cookie('modal') != 'opened' ||  $.cookie('modal') == null)
 			$("#start").modal('show');
 		$(".modal-black").animate({opacity:1},5000);
 
 		$.cookie('modal', 'opened', {path: '/'}); 
 
-
+		
+		
 		$(".modal-black").click(function(e){
 				//$("#start").modal('hide');
 			});
