@@ -378,11 +378,16 @@
 
 			});
 		
-		if($.cookie('modal') != 'opened' ||  $.cookie('modal') == null)
+		var qookie = $.cookie('modal');
+		if($.cookie('modal') != 'opened' ||  qookie == null || qookie == 'undefined'){
 			$("#start").modal('show');
+			$.cookie('modal', 'opened', {path: '/'}); 
+		}
+		
+		console.log(qookie);
 		$(".modal-black").animate({opacity:1},5000);
 
-		$.cookie('modal', 'opened', {path: '/'}); 
+		
 
 		
 		
