@@ -379,16 +379,19 @@
 			});
 
 
-		var showed = false;
+		
 		var qookie = $.cookie('modal');
 		if($.cookie('modal') != 'opened' ||  qookie == null || qookie == 'undefined' ){
 			$("#start").modal('show');
 			$.cookie('modal', 'opened', {path: '/'}); 
-			showed = true; 
-		}
-	
 		
-		if(!showed)
+		}
+			
+		if(qookie == 'opened'){
+			var showed = true; 
+		}	
+		
+		if(!showed || showed == 'undefined')
 			$("#start").modal('show');
 		
 		$(".modal-black").animate({opacity:1},5000);
