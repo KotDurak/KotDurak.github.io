@@ -381,19 +381,29 @@
 
 		
 		var qookie = $.cookie('modal');
-		if($.cookie('modal') != 'opened' ||  qookie == null || qookie == 'undefined' ){
+	/*	if($.cookie('modal') != 'opened' || qookie == 'undefined' ){
 			$("#start").modal('show');
 			$.cookie('modal', 'opened', {path: '/'}); 
 		
+		} */
+
+		var href = document.location.href; 
+		if(href.search('index.html') == -1){
+			$("#start").modal('show');
 		}
+		
+		/*
+		window.onbeforeunload = function(){$.cookie('modal', null);}
+		window.onblur = function () {$.cookie('modal', null);};
+		*/
 			
-		if(qookie == 'opened'){
+	/*	if(qookie == 'opened'){
 			var showed = true; 
 		}	
-		
+		console.log(qookie);
 		if(!showed || showed == 'undefined')
-			$("#start").modal('show');
-		alert(showed);
+			$("#start").modal('show'); */
+		
 		$(".modal-black").animate({opacity:1},5000);
 
 		
