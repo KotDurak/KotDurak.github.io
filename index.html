@@ -378,6 +378,22 @@
 
 			});
 
+			/**
+			 * -D- Отправляем на форму обратной связи; 
+			*/
+			$('form').submit(function(){
+				var str = $(this).serialize();
+				$.ajax({
+					type: 'POST', 
+					url:'mail.php', 
+					data: str,
+					success:function(msg){
+						$('#request-form').modal('hide');
+					}
+
+				});
+				return false; 
+			});
 
 		
 		var qookie = $.cookie('modal');
