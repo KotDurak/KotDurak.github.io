@@ -10,268 +10,287 @@
 	<link rel="stylesheet" type="text/css" href="styles/jquery.circliful.css">
 	<meta name="description" content="Повышение репутации вашей организации, работа с негативными отзывами">
 	<meta name="keywords" content="Репутация, Негативные отзывы, негатив, продвижение">
-</head>
-<body>
-	<header class="main-head">
-		<div class="container">
-			<div class="row head-row">
-				<div class="col-md-3 col-sm-12">
-					<div class="logo">
-						<a href="index.html">
-							<img src="images/logo.png" alt="" class="img-responsive">
-						</a>
+	<!-- Facebook Pixel Code -->
+	<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+			n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+			if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+			n.queue=[];t=b.createElement(e);t.async=!0;
+			t.src=v;s=b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t,s)}(window,document,'script',
+				'https://connect.facebook.net/en_US/fbevents.js');
+			fbq('init', '147427832597482'); 
+			fbq('track', 'PageView');
+		</script>
+		<noscript>
+			<img height="1" width="1" 
+			src="https://www.facebook.com/tr?id=147427832597482&ev=PageView
+			&noscript=1"/>
+		</noscript>
+		<!-- End Facebook Pixel Code -->
+	</head>
+	<body>
+		<header class="main-head">
+			<div class="container">
+				<div class="row head-row">
+					<div class="col-md-3 col-sm-12">
+						<div class="logo">
+							<a href="index.html">
+								<img src="images/logo.png" alt="" class="img-responsive">
+							</a>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<div class="header-text">
+							Reputation+ - строим репутацию
+						</div>	
+					</div>
+					<div class="col-md-3 col-sm-12">
+						<div class="contact-list-wrap">
+							<ul>
+								<li class="facebook">
+									<a target="_blank" class="" href="https://www.facebook.com/reputationplusrus/?ref=bookmarks">
+										<i class="fa fa-facebook"></i>
+									</a>
+								</li>
+								<li class="mail"><i class="fa fa-envelope"></i> Email:<br><a href="mailto:info@reputation-plus.ru">info@reputation-plus.ru</a></li>
+								<li class="li-request">
+									<button  id="request" type="button" class="btn btn-warning btn-request request">Оставить заявку</button>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
-				<div class="col-md-6 col-sm-12">
-					<div class="header-text">
-						Reputation+ - строим репутацию
-					</div>	
-				</div>
-				<div class="col-md-3 col-sm-12">
-					<div class="contact-list-wrap">
-						<ul>
-							<li class="facebook">
-								<a target="_blank" class="" href="https://www.facebook.com/reputationplusrus/?ref=bookmarks">
-									<i class="fa fa-facebook"></i>
-								</a>
-							</li>
-							<li class="mail"><i class="fa fa-envelope"></i> Email:<br><a href="mailto:info@reputation-plus.ru">info@reputation-plus.ru</a></li>
-							<li class="li-request">
-								<button  id="request" type="button" class="btn btn-warning btn-request request">Оставить заявку</button>
-							</li>
+			</div>
+			<nav class="main-menu">
+				<div class="container">
+					<div class="row">
+						<ul class="nav nav-justified my-menu">
+							<li class="active nav-item"><a class="nav-link" href="#services">Услуги</a></li>
+							<li><a href="#about">О нас</a></li>
+							<li><a href="#why">Зачем вам это?</a></li>
+							<li><a href="#contacts">Контакты</a></li>
 						</ul>
 					</div>
 				</div>
-			</div>
-		</div>
-		<nav class="main-menu">
+			</nav>
+		</header>
+		<a name="services"></a>
+		<section class="main">
 			<div class="container">
+				<div class="products">
+					<div class="row">
+						<div class="col-md-5">
+							<div class="item big-item">
+								<img src="images/product.jpg" class="img-responsive">
+								<div class="product-header">
+									<span>Нейтрализуем плохие отзывы</span>
+									<a href="bad_rate.html" class="service-btn button ghost-btn">Узнать подробнее <img src="images/details-btn.png" alt=""></a>
+								</div>
+
+
+							</div>
+						</div>
+						<div class="col-md-5">
+							<div class="item">
+								<img  id="represent" src="images/business_representation2.jpg" class="img-responsive">
+								<div class="product-header">
+									<span>Интернет-представительство вашего бизнеса</span>
+									<a href="representation.html" class="service-btn button ghost-btn">Узнать подробнее <img src="images/details-btn.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+						<div   class="col-md-2">
+							<div class="item xs-item">
+								<img src="images/product3.jpg" class="img-right">
+								<div class="product-header">
+									<span>Маркетинг-оформление</span>
+									<a href="marketing_design.html" class="service-btn button ghost-small ghost-btn">Подробнее<img src="images/details-btn.png" alt=""></a>
+								</div>		
+							</div>
+						</div>
+					</div>
+					<div class="row bottom-products">
+						<div class="col-md-6">
+							<div class="item small-item">
+								<img src="images/negative.jpg" class="img-responsive">
+								<div class="product-header">
+									<span>Работа с негативом</span>
+									<a href="negative_work.html" class="service-btn button  ghost-btn">Узнать подробнее<img src="images/details-btn.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="item small-item">
+								<img id="recognition" src="images/brand_recognition.jpg" class="img-responsive">
+								<div class="product-header">
+									<span>Узнаваемость бренда</span>
+									<a href="recognition.html" class="service-btn button  ghost-btn">Узнать подробнее<img src="images/details-btn.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+					</div>			
+				</div>
+
+			</div>
+
+		</section>
+		<section class="statistic">
+			<div class="container">
+				<div class="row row-statistic">
+					<div class="col-md-3 col-sm-12">
+						<div class="circle-container">
+							<div class="circlestat" data-dimension="200" data-text="92%" data-width="5" data-fontsize="38" data-percent="92" data-fgcolor="#61a9dc" data-bgcolor="#eee" data-fill="#fff"></div>
+						</div>
+						<p class="lead">
+							потребителей                  
+							читают отзывы 
+							в интернете 
+							перед покупкой товара или услуги*
+
+						</p>
+					</div>
+					<div class="col-md-3 col-sm-12">
+						<div class="circle-container">
+							<div class="circlestat" data-dimension="200" data-text="86%" data-width="5" data-fontsize="38" data-percent="86" data-fgcolor="#61a9dc" data-bgcolor="#eee" data-fill="#fff"></div>
+						</div>
+						<p class="lead">
+							прочитавших негативный отзыв колеблются с решением о покупке такого товара или услуги* 
+						</p>
+					</div>
+					<div class="col-md-3 col-sm-12">
+						<div class="circle-container">
+							<div class="circlestat" data-dimension="200" data-text="74%" data-width="5" data-fontsize="38" data-percent="74" data-fgcolor="#61a9dc" data-bgcolor="#eee" data-fill="#fff"></div>
+						</div>
+						<p class="lead">
+							бизнеса в России сталкивается с клеветой в интернете
+						</p>
+					</div>
+					<div class="col-md-3 col-sm-12">
+						<div class="circle-container">
+							<div class="circlestat" data-dimension="200" data-text="100%" data-width="5" data-fontsize="38" data-percent="100" data-fgcolor="#61a9dc" data-bgcolor="#eee" data-fill="#fff"></div>
+						</div>
+						<p class="lead">
+							таких ситуаций можно разрешить при правильном подходе
+
+						</p>
+					</div>
+				</div>
+				<p>*-По данным компании Vendasta</p>
+			</div>
+		</section>
+		<a name="about"></a>
+		<section class="about">
+			<div class="container">
+				<div class="about-block">
+					<h3 class="text-center">О нас</h3>
+					<p class="lead description">Мы профессионально занимаемся решением проблем бизнеса в интернете. Уже более 50 компаний доверили нам управление своим бизнесом в социальных сетях, площадках отзывов, форумах. Мы общаемся с нашими клиентами 24/7 и всегда отвечаем на все ваши вопросы. Оставляйте заявку и мы вышлем вам наше Коммерческое Предложение, бесплатно проведем аудит вашей компании в интернете и пришлем экспертное заключение. </p>
+				</div>
+			</div>
+		</section>
+		<a name="facts"></a>
+		<section class="facts">
+			<div class="container">
+				<h3 class="text-center">Факты</h3>
 				<div class="row">
-					<ul class="nav nav-justified my-menu">
-						<li class="active nav-item"><a class="nav-link" href="#services">Услуги</a></li>
-						<li><a href="#about">О нас</a></li>
-						<li><a href="#why">Зачем вам это?</a></li>
-						<li><a href="#contacts">Контакты</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-	</header>
-	<a name="services"></a>
-	<section class="main">
-		<div class="container">
-			<div class="products">
-				<div class="row">
-					<div class="col-md-5">
-						<div class="item big-item">
-							<img src="images/product.jpg" class="img-responsive">
-							<div class="product-header">
-								<span>Нейтрализуем плохие отзывы</span>
-								<a href="bad_rate.html" class="service-btn button ghost-btn">Узнать подробнее <img src="images/details-btn.png" alt=""></a>
+					<div class="col-md-3">
+						<div class="number-item">
+							<div class="number-icon">				
+								<i class="fa fa-briefcase fact-icon"></i>
 							</div>
-							
-
+							<div class="number-item-txt">						 
+								<p class="lead">Наши услуги как для малого бизнеса и экспертов (врачи, адвокаты и др.), так и для больших корпораций</p>
+							</div>											
 						</div>
 					</div>
-					<div class="col-md-5">
-						<div class="item">
-							<img  id="represent" src="images/business_representation2.jpg" class="img-responsive">
-							<div class="product-header">
-								<span>Интернет-представительство вашего бизнеса</span>
-								<a href="representation.html" class="service-btn button ghost-btn">Узнать подробнее <img src="images/details-btn.png" alt=""></a>
+					<div class="col-md-3">
+						<div class="number-item">
+							<div class="number-icon">
+								<i class="fa fa-dollar fact-icon"></i>
 							</div>
+							<div class="number-item-txt">						 
+								<p class="lead">57 000 рублей – максимальное повышение среднего чека у одного из наших клиентов после использования Крауд-Маркетинга</p>
+							</div>											
 						</div>
 					</div>
-					<div   class="col-md-2">
-						<div class="item xs-item">
-							<img src="images/product3.jpg" class="img-right">
-							<div class="product-header">
-								<span>Маркетинг-оформление</span>
-								<a href="marketing_design.html" class="service-btn button ghost-small ghost-btn">Подробнее<img src="images/details-btn.png" alt=""></a>
-							</div>		
-						</div>
-					</div>
-				</div>
-				<div class="row bottom-products">
-					<div class="col-md-6">
-						<div class="item small-item">
-							<img src="images/negative.jpg" class="img-responsive">
-							<div class="product-header">
-								<span>Работа с негативом</span>
-								<a href="negative_work.html" class="service-btn button  ghost-btn">Узнать подробнее<img src="images/details-btn.png" alt=""></a>
+					<div class="col-md-3">
+						<div class="number-item">
+							<div class="number-icon">
+								<i class="fa fa-line-chart fact-icon"></i>
 							</div>
+							<div class="number-item-txt">						 
+								<p class="lead">1.2 – рейтинг нашего клиента на Flamp до обращения к нам 
+
+									4.3 – рейтинг нашего клиента через 1 месяц работы с нами
+								</p>
+							</div>											
 						</div>
 					</div>
-					<div class="col-md-6">
-						<div class="item small-item">
-							<img id="recognition" src="images/brand_recognition.jpg" class="img-responsive">
-							<div class="product-header">
-								<span>Узнаваемость бренда</span>
-								<a href="recognition.html" class="service-btn button  ghost-btn">Узнать подробнее<img src="images/details-btn.png" alt=""></a>
+					<div class="col-md-3">
+						<div class="number-item">
+							<div class="number-icon">
+								<i class="fa fa-thumbs-down fact-icon"></i>
 							</div>
+							<div class="number-item-txt">						 
+								<p class="lead">Читая эти факты и имея негативные отзывы в интернете – вы прямо сейчас теряете своих потенциальных клиентов</p>
+							</div>											
 						</div>
 					</div>
-				</div>			
-			</div>
-
-		</div>
-
-	</section>
-	<section class="statistic">
-		<div class="container">
-			<div class="row row-statistic">
-				<div class="col-md-3 col-sm-12">
-					<div class="circle-container">
-						<div class="circlestat" data-dimension="200" data-text="92%" data-width="5" data-fontsize="38" data-percent="92" data-fgcolor="#61a9dc" data-bgcolor="#eee" data-fill="#fff"></div>
-					</div>
-					<p class="lead">
-						потребителей                  
-						читают отзывы 
-						в интернете 
-						перед покупкой товара или услуги*
-
-					</p>
 				</div>
-				<div class="col-md-3 col-sm-12">
-					<div class="circle-container">
-						<div class="circlestat" data-dimension="200" data-text="86%" data-width="5" data-fontsize="38" data-percent="86" data-fgcolor="#61a9dc" data-bgcolor="#eee" data-fill="#fff"></div>
-					</div>
-					<p class="lead">
-						прочитавших негативный отзыв колеблются с решением о покупке такого товара или услуги* 
-					</p>
-				</div>
-				<div class="col-md-3 col-sm-12">
-					<div class="circle-container">
-						<div class="circlestat" data-dimension="200" data-text="74%" data-width="5" data-fontsize="38" data-percent="74" data-fgcolor="#61a9dc" data-bgcolor="#eee" data-fill="#fff"></div>
-					</div>
-					<p class="lead">
-						бизнеса в России сталкивается с клеветой в интернете
-					</p>
-				</div>
-				<div class="col-md-3 col-sm-12">
-					<div class="circle-container">
-						<div class="circlestat" data-dimension="200" data-text="100%" data-width="5" data-fontsize="38" data-percent="100" data-fgcolor="#61a9dc" data-bgcolor="#eee" data-fill="#fff"></div>
-					</div>
-					<p class="lead">
-						таких ситуаций можно разрешить при правильном подходе
-
-					</p>
-				</div>
-			</div>
-			<p>*-По данным компании Vendasta</p>
-		</div>
-	</section>
-	<a name="about"></a>
-	<section class="about">
-		<div class="container">
-			<div class="about-block">
-				<h3 class="text-center">О нас</h3>
-				<p class="lead description">Мы профессионально занимаемся решением проблем бизнеса в интернете. Уже более 50 компаний доверили нам управление своим бизнесом в социальных сетях, площадках отзывов, форумах. Мы общаемся с нашими клиентами 24/7 и всегда отвечаем на все ваши вопросы. Оставляйте заявку и мы вышлем вам наше Коммерческое Предложение, бесплатно проведем аудит вашей компании в интернете и пришлем экспертное заключение. </p>
-			</div>
-		</div>
-	</section>
-	<a name="facts"></a>
-	<section class="facts">
-		<div class="container">
-			<h3 class="text-center">Факты</h3>
-			<div class="row">
-				<div class="col-md-3">
-					<div class="number-item">
-						<div class="number-icon">				
-							<i class="fa fa-briefcase fact-icon"></i>
-						</div>
-						<div class="number-item-txt">						 
-							<p class="lead">Наши услуги как для малого бизнеса и экспертов (врачи, адвокаты и др.), так и для больших корпораций</p>
-						</div>											
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="number-item">
-						<div class="number-icon">
-							<i class="fa fa-dollar fact-icon"></i>
-						</div>
-						<div class="number-item-txt">						 
-							<p class="lead">57 000 рублей – максимальное повышение среднего чека у одного из наших клиентов после использования Крауд-Маркетинга</p>
-						</div>											
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="number-item">
-						<div class="number-icon">
-							<i class="fa fa-line-chart fact-icon"></i>
-						</div>
-						<div class="number-item-txt">						 
-							<p class="lead">1.2 – рейтинг нашего клиента на Flamp до обращения к нам 
-
-								4.3 – рейтинг нашего клиента через 1 месяц работы с нами
-							</p>
-						</div>											
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="number-item">
-						<div class="number-icon">
-							<i class="fa fa-thumbs-down fact-icon"></i>
-						</div>
-						<div class="number-item-txt">						 
-							<p class="lead">Читая эти факты и имея негативные отзывы в интернете – вы прямо сейчас теряете своих потенциальных клиентов</p>
-						</div>											
-					</div>
-				</div>
-			</div>
-			<div class="text-center">
-				<button  id="request" type="button" class="btn btn-warning btn-request request">Оставить заявку</button>
+				<div class="text-center">
+					<button  id="request" type="button" class="btn btn-warning btn-request request">Оставить заявку</button>
+				</div>	
 			</div>	
-		</div>	
-	</section>
-	<a name="why"></a>
-	<section class="why">
-		<div class="container">
-			<div class="about-block">
-				<h3 class="text-center">Зачем вам это</h3>
-				<p class="lead description">Вы еще не поняли? Приведем простой пример: Ваша фирма А продает прекрасные стулья – они крепкие, красиво выглядят и стоят в пределах средних значений рынка. Есть вы, а есть Иван Петрович и его компания В – глядя на вас он решил тоже продавать точно такие же стулья и открыл офис напротив вас, сразу же после открытия он занялся формированием образа своей компании в интернете: обратился в репутационную компанию которая быстро сформировала ему положительный рейтинг на Flamp, стала прекрасно работать с негативом в социальных сетях. Как следствие, ваши продажи упали, ведь как мы знаем – 94% покупателей почитали отзывы в интернете о вас, и о вашем конкуренте Иване Петровиче. Но это не все! Иван Петрович глядя на то, что прямо напротив его офиса располагается такая же компания решил испортить им репутацию и стал каждый день писать негативный отзыв о том, какие «ужасные» стулья вы продаете.
-
-					Именно поэтому вам уже сегодня нужно задуматься о своей репутации в интернете, потому что ваша репутация – это ваш фундамент, фундамент вашего бизнеса и его будущее. 
-				</p>
-			</div>
-			<div class="text-center">
-				<button  id="request" type="button" class="btn btn-warning btn-request request">Оставить заявку</button>
-			</div>
-
-		</div>
-	</section>
-	<a name="contacts"></a>
-	<footer>
-		<div class="container">
-			<h3 class="text-center">Контакты</h3>
-			<div class="row">
-				<div class="col-md-4 contact">
-					<i class="glyphicon glyphicon-envelope"></i>
-					<span>Email:</span><br/>
-					<span><a class="" href="mailto:info@reputation-plus.ru">info@reputation-plus.ru</a></span>
-				</div>
-				<div class="col-md-4 contact">
-					
-				</div>
-				<div class="col-md-4 contact">
-					<a target="_blank" id="fb-link" class="" href="https://www.facebook.com/reputationplusrus/?ref=bookmarks">
-						facebook
-					</a>
-				</div>
-			</div>
-		</div>
-		<div class="copyright">
+		</section>
+		<a name="why"></a>
+		<section class="why">
 			<div class="container">
-				Copyright <script>document.write(new Date().getFullYear());</script> All right reserved
+				<div class="about-block">
+					<h3 class="text-center">Зачем вам это</h3>
+					<p class="lead description">Вы еще не поняли? Приведем простой пример: Ваша фирма А продает прекрасные стулья – они крепкие, красиво выглядят и стоят в пределах средних значений рынка. Есть вы, а есть Иван Петрович и его компания В – глядя на вас он решил тоже продавать точно такие же стулья и открыл офис напротив вас, сразу же после открытия он занялся формированием образа своей компании в интернете: обратился в репутационную компанию которая быстро сформировала ему положительный рейтинг на Flamp, стала прекрасно работать с негативом в социальных сетях. Как следствие, ваши продажи упали, ведь как мы знаем – 94% покупателей почитали отзывы в интернете о вас, и о вашем конкуренте Иване Петровиче. Но это не все! Иван Петрович глядя на то, что прямо напротив его офиса располагается такая же компания решил испортить им репутацию и стал каждый день писать негативный отзыв о том, какие «ужасные» стулья вы продаете.
+
+						Именно поэтому вам уже сегодня нужно задуматься о своей репутации в интернете, потому что ваша репутация – это ваш фундамент, фундамент вашего бизнеса и его будущее. 
+					</p>
+				</div>
+				<div class="text-center">
+					<button  id="request" type="button" class="btn btn-warning btn-request request">Оставить заявку</button>
+				</div>
+
 			</div>
-		</div>
-	</footer>
-	<div id="start" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-		<div class="modal-dialog modal-lg" role="document">
-			<div class="modal-content">
-				<div class="row img-bg-row">
-					<div class="col-md-12 modal-black text-center" style="opacity: 0">
-						<img src="images/logo-modal-5.png" class="img-responsive modal-img">
+		</section>
+		<a name="contacts"></a>
+		<footer>
+			<div class="container">
+				<h3 class="text-center">Контакты</h3>
+				<div class="row">
+					<div class="col-md-4 contact">
+						<i class="glyphicon glyphicon-envelope"></i>
+						<span>Email:</span><br/>
+						<span><a class="" href="mailto:info@reputation-plus.ru">info@reputation-plus.ru</a></span>
+					</div>
+					<div class="col-md-4 contact">
+
+					</div>
+					<div class="col-md-4 contact">
+						<a target="_blank" id="fb-link" class="" href="https://www.facebook.com/reputationplusrus/?ref=bookmarks">
+							facebook
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">
+				<div class="container">
+					Copyright <script>document.write(new Date().getFullYear());</script> All right reserved
+				</div>
+			</div>
+		</footer>
+		<div id="start" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="row img-bg-row">
+						<div class="col-md-12 modal-black text-center" style="opacity: 0">
+							<img src="images/logo-modal-5.png" class="img-responsive modal-img">
 					<!--	<div class="text-center text-reputaion-modal">
 							Строим Репутацию
 						</div> -->
@@ -294,7 +313,7 @@
 							Посоветоваться с экспертом		
 						</div>
 						<div class="form-bottom col-md-8">
-					<form role="form" action="" method="post">
+							<form role="form" action="" method="post">
 								<div class="row form-row">
 									<div class="col-md-12 col-sm-12 input-text">
 										<span class="input-wrapper">
@@ -380,23 +399,23 @@
 
 			/**
 			 * -D- Отправляем на форму обратной связи; 
-			*/
-			$('form').submit(function(){
-				var str = $(this).serialize();
-				$.ajax({
-					type: 'POST', 
-					url:'mail.php', 
-					data: str,
-					success:function(msg){
-						$('#request-form').modal('hide');
-					}
+			 */
+			 $('form').submit(function(){
+			 	var str = $(this).serialize();
+			 	$.ajax({
+			 		type: 'POST', 
+			 		url:'mail.php', 
+			 		data: str,
+			 		success:function(msg){
+			 			$('#request-form').modal('hide');
+			 		}
 
-				});
-				return false; 
-			});
+			 	});
+			 	return false; 
+			 });
 
-		
-		var qookie = $.cookie('modal');
+
+			 var qookie = $.cookie('modal');
 	/*	if($.cookie('modal') != 'opened' || qookie == 'undefined' ){
 			$("#start").modal('show');
 			$.cookie('modal', 'opened', {path: '/'}); 
@@ -412,7 +431,7 @@
 		window.onbeforeunload = function(){$.cookie('modal', null);}
 		window.onblur = function () {$.cookie('modal', null);};
 		*/
-			
+
 	/*	if(qookie == 'opened'){
 			var showed = true; 
 		}	
