@@ -1,0 +1,407 @@
+@font-face{
+	font-family: 'panton-bold';
+	src:url(../fonts/panton-bold.ttf);
+}
+
+@font-face{
+	font-family:'proxima-nova';
+	src:url(../fonts/proxima-nova.ttf);
+}
+
+@font-face{
+	font-family: 'panton-extra-bold'; 
+	src:url(../fonts/panton-extra-bold.otf);
+}
+
+@font-face{
+	font-family: 'panton'; 
+	src:url(../fonts/panton.otf);
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .slick-prev{
+  	left: -10px;
+  }
+  .slick-next{
+  	right: -10px;
+  }
+  
+}
+
+header{
+	padding-top: 55px;
+	padding-bottom: 45px;
+	border-bottom: 4px solid #dfdddb;
+    box-shadow: inset -16px -24px 43px -50px #000000;
+    position: relative;
+}
+
+.slider {
+        width: 100%;
+        margin: 100px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      /*opacity: .2; */
+    }
+
+    /*.slick-active {
+      opacity: .5;
+    } */
+
+    .slick-current {
+      opacity: 1;
+    }
+
+
+.page-info img, .cart-info img{
+	display: inline-block;
+	vertical-align: sub;
+	margin-right: 14px;
+}
+
+
+.page-name, .font-panton-16{
+	font-family: 'panton-bold';
+	font-size: 16.8px;
+	vertical-align: middle;
+}
+
+.phone-info img{
+	display: inline-block;
+    margin-right: 8px;
+    margin-left: -8px;
+}
+
+.center-logo{
+	/*background: #604b3f; */
+	background-image: url(../images/top-img.png);
+	width: 390px;
+	height: 144px;
+	position: absolute;
+    top: 0;
+    left: calc(50% - 195px);
+}
+
+.site-logo{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/logo-boock.png);
+	background-position: 1151px -10px;
+}
+
+.custom-nav{
+    margin-top: 30px;
+}
+
+.custom-nav li{
+	margin-bottom: 25px;
+}
+
+.custom-nav li > a{
+	padding: 0 10px 0 10px;
+	display: inline-block;
+	line-height: 50px;
+	color:#000000;
+}
+
+.custom-nav li > a > img{
+	vertical-align: middle;
+}
+
+.category-item{
+	overflow: hidden;
+	text-overflow: ellipsis;
+    display: inline-block;
+    line-height: 1.2em;
+    vertical-align: middle;
+    max-width: 140px;
+    margin-left: 10px;
+}
+
+.news-slider{
+	height: 450px;
+	background-image: url(../images/news-bg.png);: 
+}
+
+.news-slider #carousel{
+	height: 450px;
+}
+
+.news-slider .carousel-control{
+	background: rgba(0,0,0,0);
+}
+
+.news-slider .carousel-inner{
+	margin-top: 25px;
+}
+
+.news-block{
+	padding-top: 35px;
+}
+
+.font-proxima-30{
+	font-size: 30px;
+	font-family: 'proxima-nova';
+}
+
+.block-header{
+	margin-bottom: 0;
+}
+
+.news-car-item{
+	display: block;
+}
+
+.panton-extra-bld-20{
+	font-family: 'panton-extra-bold'; 
+	font-size: 20px; 
+}
+
+.regular-header{
+	color:#604b3f;
+}
+
+.regular-description{
+	color:#604b3f;
+	font-family: 'panton';
+	font-size: 14px; 
+}
+
+.bottom-regular-desc p{
+	float: left;
+	width: 80%;
+}
+
+.bottom-regular-desc a{
+	display: block;
+	float: right;
+}
+
+.store-items{
+	margin-top: 30px;
+}
+
+.store-content{
+	position: relative;
+	padding:10px 5px; 
+	border-radius: 25px;
+    overflow: hidden;
+    border: 1px solid #eeebea;
+}
+
+.store-item{
+/*	border: 1px solid #eeebea;
+	border-radius: 25px;
+	overflow: hidden; */
+	margin-bottom: 10px;
+}
+
+.top-attributes .heart{
+	display: block;
+    float: left;
+    background: #eeebe9;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.top-attributes .discount-info{
+	background: #f3b96f;
+    float: right;
+    display: block;
+    line-height: 2.5em;
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+.store-item-header{
+	font-family: 'panton-bold';
+	font-size: 18px;
+	color: #604b3f;
+	margin:0 0 10px 0;
+}
+
+.store-image{
+	text-align: center;
+}
+
+.store-image > img{
+	display: inline-block;
+}
+
+.store-header-subinfo{
+	display: block;
+	color: #604b3f; 
+	font-size: 14px;
+}
+
+.main-price{
+	color:#604b3f;
+	display: block;
+	line-height: 1em;
+}
+
+.old-price{
+	font-family: 'panton';
+	font-size: 14px; 
+	display: block;
+	text-decoration: line-through;
+}
+
+.price-button{
+	background: #604b3f;
+	padding: 10px 20px;
+	border-radius: 6px;
+}
+
+.price-block{
+	padding-top:30px;
+}
+
+.price-block > .price-text{
+	padding-left: 0;
+}
+
+.price-button-text{
+	font-size: 14px; 
+	color: #ffffff;
+	font-family: 'panton';
+}
+
+.price-button-block{
+	padding-right: 0;
+}
+
+.card-block{
+	margin-top: 22px;
+}
+
+.my-card > iframe{
+	max-width: 100%;
+}
+
+#footer{
+	background: #282b35;
+	padding-top: 60px;
+}
+
+.all-right-footer{
+	margin-top: 90px;
+}
+
+.company-name{
+	font-family: 'panton';
+	font-size: 12px; 
+	color:#8f93a2;
+	display: block;
+
+	line-height: 1.2em;
+}
+
+.footer-first-menu > ul{
+	list-style-type: none;
+}
+
+.footer-first-menu  li{
+	margin-bottom: 20px;
+}
+
+.footer-menu-item > a{
+	color: #ffffff;
+	text-decoration: none;
+	font-family: 'panton';
+	font-size: 16.8px;
+}
+
+.footer-addresses  ul{
+	list-style-type: none;
+	padding: 0;
+}
+
+.footer-addresses > ul > li > img{
+	display: block;
+	float: left;
+}
+
+.addr-desc{
+	float: left;
+	color: #ffffff;
+	font-family: 'panton-bold'; 
+	font-size: 16.8px;
+	margin-left: 10px;
+}
+
+.addr-desc > a{
+	color:#ffffff;
+}
+
+
+.footer-addresses > ul > li:first-child{
+	margin-bottom: 50px
+}
+
+.phone-block > ul{
+	margin-bottom: 0;
+}
+
+.phone-block > ul > li{
+	margin-bottom: 0 !important;
+}
+
+.phone-sub{
+	color:#8f93a2;
+	font-size: 12px; 
+	color:'panton';
+}
+
+.order-call{
+	color:#604b3f;
+	font-family: 'panton-bold';
+	text-decoration: none;
+	font-size: 14px; 
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	background: #f3b96f;
+	margin-top:35px;
+	padding: 15px 45px;
+	border-radius: 5px;
+}
+
+.order-call:hover{
+	color:#604b3f !important;
+	text-decoration: none !important;
+}
